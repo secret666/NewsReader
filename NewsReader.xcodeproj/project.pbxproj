@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		749B4FA11C51D2D100B508EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B4FA01C51D2D100B508EC /* main.m */; };
 		749B4FA41C51D2D100B508EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B4FA31C51D2D100B508EC /* AppDelegate.m */; };
-		749B4FA71C51D2D100B508EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B4FA61C51D2D100B508EC /* ViewController.m */; };
+		749B4FA71C51D2D100B508EC /* HomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B4FA61C51D2D100B508EC /* HomePage.m */; };
 		749B4FAA1C51D2D100B508EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749B4FA81C51D2D100B508EC /* Main.storyboard */; };
 		749B4FAC1C51D2D100B508EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749B4FAB1C51D2D100B508EC /* Assets.xcassets */; };
 		749B4FAF1C51D2D100B508EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749B4FAD1C51D2D100B508EC /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		749B4FA01C51D2D100B508EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		749B4FA21C51D2D100B508EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		749B4FA31C51D2D100B508EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		749B4FA51C51D2D100B508EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		749B4FA61C51D2D100B508EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		749B4FA51C51D2D100B508EC /* HomePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePage.h; sourceTree = "<group>"; };
+		749B4FA61C51D2D100B508EC /* HomePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePage.m; sourceTree = "<group>"; };
 		749B4FA91C51D2D100B508EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		749B4FAB1C51D2D100B508EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		749B4FAE1C51D2D100B508EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		749B4FC01C51D2D100B508EC /* NewsReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749B4FC41C51D2D100B508EC /* NewsReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsReaderUITests.m; sourceTree = "<group>"; };
 		749B4FC61C51D2D100B508EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749B4FD21C51D32300B508EC /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; name = Readme; path = NewsReader/Readme; sourceTree = "<group>"; };
+		749B4FDA1C51D44800B508EC /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		749B4F931C51D2D100B508EC = {
 			isa = PBXGroup;
 			children = (
+				749B4FD21C51D32300B508EC /* Readme */,
 				749B4F9E1C51D2D100B508EC /* NewsReader */,
 				749B4FB81C51D2D100B508EC /* NewsReaderTests */,
 				749B4FC31C51D2D100B508EC /* NewsReaderUITests */,
@@ -101,14 +104,17 @@
 		749B4F9E1C51D2D100B508EC /* NewsReader */ = {
 			isa = PBXGroup;
 			children = (
+				749B4FD91C51D3EE00B508EC /* Global */,
+				749B4FD31C51D37F00B508EC /* Controller */,
+				749B4FD41C51D38B00B508EC /* Model */,
+				749B4FD51C51D3A100B508EC /* NetWork */,
+				749B4FD81C51D3E400B508EC /* DB */,
+				749B4FD61C51D3C000B508EC /* Utility */,
+				749B4FD71C51D3CD00B508EC /* ThirdSDK */,
+				749B4FDA1C51D44800B508EC /* Defines.h */,
 				749B4FA21C51D2D100B508EC /* AppDelegate.h */,
 				749B4FA31C51D2D100B508EC /* AppDelegate.m */,
-				749B4FA51C51D2D100B508EC /* ViewController.h */,
-				749B4FA61C51D2D100B508EC /* ViewController.m */,
-				749B4FA81C51D2D100B508EC /* Main.storyboard */,
-				749B4FAB1C51D2D100B508EC /* Assets.xcassets */,
-				749B4FAD1C51D2D100B508EC /* LaunchScreen.storyboard */,
-				749B4FB01C51D2D100B508EC /* Info.plist */,
+				749B4FDB1C51D45600B508EC /* Resources */,
 				749B4F9F1C51D2D100B508EC /* Supporting Files */,
 			);
 			path = NewsReader;
@@ -117,6 +123,7 @@
 		749B4F9F1C51D2D100B508EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				749B4FB01C51D2D100B508EC /* Info.plist */,
 				749B4FA01C51D2D100B508EC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +145,115 @@
 				749B4FC61C51D2D100B508EC /* Info.plist */,
 			);
 			path = NewsReaderUITests;
+			sourceTree = "<group>";
+		};
+		749B4FD31C51D37F00B508EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				749B4FDC1C51D48A00B508EC /* Page */,
+				749B4FDD1C51D49500B508EC /* Widget */,
+				749B4FDE1C51D4A700B508EC /* Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		749B4FD41C51D38B00B508EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		749B4FD51C51D3A100B508EC /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		749B4FD61C51D3C000B508EC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		749B4FD71C51D3CD00B508EC /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		749B4FD81C51D3E400B508EC /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		749B4FD91C51D3EE00B508EC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		749B4FDB1C51D45600B508EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				749B4FE11C51D50B00B508EC /* Config */,
+				749B4FE01C51D50300B508EC /* Image */,
+				749B4FDF1C51D4FC00B508EC /* Xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		749B4FDC1C51D48A00B508EC /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				749B4FA51C51D2D100B508EC /* HomePage.h */,
+				749B4FA61C51D2D100B508EC /* HomePage.m */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
+		749B4FDD1C51D49500B508EC /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Widget;
+			sourceTree = "<group>";
+		};
+		749B4FDE1C51D4A700B508EC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		749B4FDF1C51D4FC00B508EC /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				749B4FA81C51D2D100B508EC /* Main.storyboard */,
+				749B4FAD1C51D2D100B508EC /* LaunchScreen.storyboard */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		749B4FE01C51D50300B508EC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				749B4FAB1C51D2D100B508EC /* Assets.xcassets */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		749B4FE11C51D50B00B508EC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				749B4FA71C51D2D100B508EC /* ViewController.m in Sources */,
+				749B4FA71C51D2D100B508EC /* HomePage.m in Sources */,
 				749B4FA41C51D2D100B508EC /* AppDelegate.m in Sources */,
 				749B4FA11C51D2D100B508EC /* main.m in Sources */,
 			);
